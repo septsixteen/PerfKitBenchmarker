@@ -27,7 +27,7 @@ PREPROVISIONED_DATA = {
     BINUTILS_TAR:
         '8c3850195d1c093d290a716e20ebcaa72eda32abf5e3d8611154b39cff79e9ea',
     GLIBC_TAR:
-        'f3eeb8d57e25ca9fc13c2af3dae97754f9f643bc69229546828e3a240e2af04b'
+        '9246fe44f68feeec8c666bb87973d590ce0137cca145df014c72ec95be9ffd17'
 }
 PACKAGE_DATA_URL = {
     BINUTILS_TAR: posixpath.join(
