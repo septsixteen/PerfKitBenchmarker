@@ -18,7 +18,7 @@ from perfkitbenchmarker.linux_packages import INSTALL_DIR
 
 PACKAGE_NAME = 'glibc'
 GLIBC_DIR = '%s/glibc' % INSTALL_DIR
-GLIBC_VERSION = '2.29'
+GLIBC_VERSION = '2.31'
 GLIBC_TAR = 'glibc-{}.tar.xz'.format(GLIBC_VERSION)
 
 BINUTILS_DIR = '%s/binutils' % INSTALL_DIR
