@@ -22,7 +22,7 @@ GLIBC_VERSION = '2.31'
 GLIBC_TAR = 'glibc-{}.tar.xz'.format(GLIBC_VERSION)
 
 BINUTILS_DIR = '%s/binutils' % INSTALL_DIR
-BINUTILS_TAR = 'binutils-2.30.tar.gz'
+BINUTILS_TAR = 'binutils-2.34.tar.gz'
 PREPROVISIONED_DATA = {
     BINUTILS_TAR:
         '8c3850195d1c093d290a716e20ebcaa72eda32abf5e3d8611154b39cff79e9ea',
