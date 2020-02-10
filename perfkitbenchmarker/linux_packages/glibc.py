@@ -25,7 +25,7 @@ BINUTILS_DIR = '%s/binutils' % INSTALL_DIR
 BINUTILS_TAR = 'binutils-2.34.tar.gz'
 PREPROVISIONED_DATA = {
     BINUTILS_TAR:
-        '8c3850195d1c093d290a716e20ebcaa72eda32abf5e3d8611154b39cff79e9ea',
+        '53537d334820be13eeb8acb326d01c7c81418772d626715c7ae927a7d401cab3',
     GLIBC_TAR:
         '9246fe44f68feeec8c666bb87973d590ce0137cca145df014c72ec95be9ffd17'
 }
