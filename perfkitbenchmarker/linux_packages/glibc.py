@@ -40,9 +40,8 @@ PACKAGE_DATA_URL = {
 
 def _Install(vm):
   """Installs the Glibc Benchmark package on the VM."""
-  vm.Install('node_js')
   vm.Install('build_tools')
-  vm.InstallPackages('bison')
+  vm.InstallPackages('gcc-snapshot bison texinfo')
 
   vm.RemoteCommand('cd {0} && mkdir binutils'.format(INSTALL_DIR))
   vm.InstallPreprovisionedPackageData(
@@ -51,9 +50,8 @@ def _Install(vm):
   vm.RemoteCommand('cd {0} && mkdir binutils-build && '
                    'cd binutils-build/ && '
                    '../binutils-{1}/configure --prefix=/opt/binutils && '
-                   'make -j 4 && sudo make install'.format(BINUTILS_DIR, BINUTILS_VERSION))
-
-  vm.Install('gcc5')
+                   'make -j 4 && sudo make install'.format(
+                       BINUTILS_DIR, BINUTILS_VERSION))
 
   vm.RemoteCommand('cd {0} && mkdir glibc'.format(INSTALL_DIR))
   vm.InstallPreprovisionedPackageData(
